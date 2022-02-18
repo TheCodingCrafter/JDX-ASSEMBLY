@@ -1,0 +1,45 @@
+=====Instructions====
+* = not done or work in progress
+? = maybe coming soon, maybe not
+
+=====Data-Based Instructions=====
+mov  ------ moves a value into a register (mov <REGISTER> <VALUE>) value can be the contents of the temporary
+            register if you specify it as [\*\] or the second as [\**\]
+ldt  ------ loads a register's value into the temporary register (ldt <REGISTER>)
+ldt2  ------ loads a register's value into the second temporary register (ldt2 <REGISTER>)
+rd   ------ converts a register to a integer (rd <REGISTER>)
+xrd  ------ converts a register to a float (xrd <REGISTER>)
+str  ------ converts a register to a string (str <REGISTER>)
+
+=====Arithmetic Instructions=====
+add  ------ adds a value to a register, value can be the contents of the temporary
+            register if you specify it as [\*\] or the second as [\**\] (add <REGISTER> <VALUE>)
+sub  ------ subtracts a value from a register, value can be the contents of the temporary
+            register if you specify it as [\*\] or the second as [\**\] (sub <REGISTER> <VALUE>)
+mul  ------ multiplies a register by a value, value can be the contents of the temporary
+            register if you specify it as [\*\] or the second as [\**\] (mul <REGISTER> <VALUE>)
+div  ------ divides a register by a value, value can be the contents of the temporary
+            register if you specify it as [\*\] or the second as [\**\] (div <REGISTER> <VALUE>)
+
+===== Misc Instructions=====
+jmp  ------ jumps to a specified line in the code by setting the program counter variable (jmp <LINE>)
+jnz  ------ jumps to a specified line in the code if specified register is not zero (jnz <REGISTER> <LINE>)
+invk ------ invokes an command (invk <COMMAND>)
+require --- imports an external library (require <LIBRARY_NAME>)
+inpt ------ gets user input (inpt <PROMPT>)
+fnc  ------ calls a function loaded from a library (fnc <FUNCTION_NAME>)
+end  ------ what do you think it does, ends the program
+
+=====Flags=====
+#debug ---- enables debug information (#debug)
+#admin *
+
+=====Registers=====
+A-Z ------ normal data registers
+al  ------ register used for printing
+pc  ------ read-only register containing the value of the program counter
+fc  ------ read-only register containing the return value of the last executed fuction
+
+
+=====Commands=====
+AL_PRT prints the value of register "al"

@@ -1,0 +1,2 @@
+mov al ' World!'
+invk AL_PRT

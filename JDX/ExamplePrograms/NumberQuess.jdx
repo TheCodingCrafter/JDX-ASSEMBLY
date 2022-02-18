@@ -1,0 +1,29 @@
+; librarys
+require random
+require logic
+
+; choose number
+fnc rand 1 5
+ldt fc
+mov b [\*\]
+rd b
+
+; get user input
+inpt 'Enter a number 1-5: '
+ldt -
+mov a [\*\]
+rd a
+ldt a
+ldt2 b
+fnc not_equal [\*\] [\**\]
+jnz fc 28
+fnc equal [\**\] [\*\]
+jnz fc 25
+
+mov al 'You Lost!'
+invk AL_PRT
+end
+
+mov al 'You Won!'
+invk AL_PRT
+end

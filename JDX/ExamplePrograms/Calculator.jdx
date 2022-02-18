@@ -1,0 +1,62 @@
+; librarys
+require logic
+
+; get input
+inpt "Enter First Num: "
+ldt -
+mov a [\*\]
+xrd a
+
+inpt "Enter Operator: "
+ldt -
+mov b [\*\]
+str b
+
+inpt "Enter Second Num: "
+ldt -
+mov c [\*\]
+xrd c
+
+; logic
+ldt b
+
+fnc equal [\*\] '+'
+jnz fc 36
+
+fnc equal [\*\] '-'
+jnz fc 42
+
+fnc equal [\*\] '*'
+jnz fc 50
+
+fnc equal [\*\] '/'
+jnz fc 57
+
+; math
+ldt c
+add a [\*\]
+ldt a
+mov al [\*\]
+invk AL_PRT
+end
+
+ldt c
+sub a [\*\]
+ldt a
+mov al [\*\]
+invk AL_PRT
+end
+
+ldt c
+mul a [\*\]
+ldt a
+mov al [\*\]
+invk AL_PRT
+end
+
+ldt c
+div a [\*\]
+ldt a
+mov al [\*\]
+invk AL_PRT
+end
