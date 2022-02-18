@@ -13,4 +13,4 @@ Requires Python 3.10+.
 
 JDX-Assembly is nearing Turing Completeness, Hooray! [Learn More](https://en.wikipedia.org/wiki/Turing_completeness)
 
-Copyright (c) 2022 TheCodingCrafter, All rights reserved.
+Copyright (c) 2022 TheCodingCrafter.
