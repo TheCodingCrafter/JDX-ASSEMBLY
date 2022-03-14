@@ -16,6 +16,7 @@ REG['-'] = ''
 
 
 # functions
+# https://stackoverflow.com/questions/20256066/python-split-string-by-spaces-except-when-in-quotes-but-keep-the-quotes/20284563#20284563
 def SpaceSplit(string) :
   last = 0
   splits = []
